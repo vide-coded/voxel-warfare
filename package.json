@@ -1,0 +1,17 @@
+{
+  "name": "3D-game",
+  "version": "0.1.0",
+  "description": "a 3D game that runs in a browser, where you can move using ZQSD and the mouse, interact with NPCs that give you quests, use weapons to defeat enemies",
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"Development scripts will be added by agents\"",
+    "build": "echo \"Build scripts will be added by agents\"",
+    "test": "echo \"Test scripts will be added by agents\""
+  },
+  "keywords": [
+    "saas",
+    "ai-powered"
+  ],
+  "author": "",
+  "license": "MIT"
+}
