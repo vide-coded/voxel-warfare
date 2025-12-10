@@ -1,16 +1,52 @@
 {
-  "name": "3D-game",
+  "name": "voxel-warfare",
   "version": "0.1.0",
-  "description": "a 3D game that runs in a browser, where you can move using ZQSD and the mouse, interact with NPCs that give you quests, use weapons to defeat enemies",
+  "description": "3D browser-based action/adventure game with Minecraft-GTA hybrid mechanics",
   "type": "module",
   "scripts": {
-    "dev": "echo \"Development scripts will be added by agents\"",
-    "build": "echo \"Build scripts will be added by agents\"",
-    "test": "echo \"Test scripts will be added by agents\""
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "server": "cd server && bun run dev"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "@react-three/postprocessing": "^3.0.0",
+    "@react-three/rapier": "^2.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simplex-noise": "^4.0.3",
+    "socket.io-client": "^4.8.1",
+    "tailwind-merge": "^2.5.5",
+    "three": "^0.170.0",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.170.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
   },
   "keywords": [
-    "saas",
-    "ai-powered"
+    "game",
+    "3d",
+    "browser",
+    "threejs",
+    "react"
   ],
   "author": "",
   "license": "MIT"
